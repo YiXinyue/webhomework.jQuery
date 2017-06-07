@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="/jquery/jquery-1.11.1.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("b").after("<i>我还是很喜欢你，像风走了八千里，不问归期。<br></i>");
+  });
+
+  $("#btn2").click(function(){
+    $("i").remove();
+  });
+});
+</script>
+	
+</head>
+<body>
+
+<p>之后插入请点击添加按钮，删除全部请点击清除按钮。</p>
+<img src="http://wx3.sinaimg.cn/mw690/8978df71ly1ffsthwq8p4j21hc0xcn6g.jpg">
+
+<b>我还是很喜欢你，像风走了八千里，不问归期。<br></b>
+
+<button id="btn1">插入</button>
+<button id="btn2">清除</button>
+
+</body>
+</html>
